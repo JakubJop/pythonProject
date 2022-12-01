@@ -1,13 +1,12 @@
-lista = []
-for i in range(7, -1, -1):
-    a = 2**i
-    lista.append(2**i)
-print(lista)
-lista1 = [2**i for i in range(7, -1, -1)]
-wagi = np.array(lista1)
+import numpy as np
+tab2=np.random.randint(low=0,high=50,size=(5,5))
+print(tab2)
+print("Maximum wartość",tab2.max())
+print("Min wartość",tab2.min())
+print("Maximum wartość wiersza",tab2.max(axis=1))
+print("Maximum wartość kolumn",tab2.max(axis=0))
+print("Min wartość wiersza",tab2.min(axis=1))
+print("Min wartość kolumn",tab2.min(axis=0))
+print(tab2.sum(axis=0))
+print(tab2.sum(axis=1))
 
-liczba_bin = np.random.randint(low=3,  high= 2, size= 8)
-print(liczba_bin)
-
-tab = wagi * liczba_bin
-print(tab.sum())
